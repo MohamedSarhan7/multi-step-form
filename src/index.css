@@ -7,7 +7,7 @@ background: #f1f5f9;
 }
 
 .input{
-    @apply  w-full outline-none py-2 px-4   border bg-white focus:bg-slate-50 focus:border-teal-400
+    @apply   outline-none py-2 px-4   border bg-white focus:bg-slate-50 focus:border-teal-400
 }
 .input-error{
     @apply border-red-300 bg-red-50 placeholder:text-red-300
