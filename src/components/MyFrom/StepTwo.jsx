@@ -45,12 +45,12 @@ export default function StepTwo({ data, next, prev }) {
                         </div>
 
                         <div className=' col-span-2  grid grid-cols-6 gap-4 '>
-                            <div className='col-start-4 col-span-1'>
+                            <div className='col-start-2 col-span-2 lg:col-start-4 lg:col-span-1 md:col-start-2 md:col-span-2 sm:col-start-2 sm:col-span-2'>
                                 <div type='button' onClick={() => { prev(values) }} className=" btn cursor-pointer bg-gray-400 hover:bg-slate-800 transition duration-300" >Back</div>
                             </div>
                             <div className='col-span-2 justify-self-stretch '>
 
-                                <button type='submit' className={` btn w-52 bg-green-500  font-semibold transition duration-400 ease-in-out hover:bg-slate-700 ${Object.keys(errors).length != 0 ? "bg-red-300 hover:bg-red-600 cursor-not-allowed opacity-50 " : ""}`} >Confrim</button>
+                                <button type='submit' className={` btn md:w-52 sm:w-32 bg-green-500  font-semibold transition duration-400 ease-in-out hover:bg-slate-700 ${Object.keys(errors).length != 0 ? "bg-red-300 hover:bg-red-600 cursor-not-allowed opacity-50 " : ""}`} >Confrim</button>
                             </div>
                         </div>
 
