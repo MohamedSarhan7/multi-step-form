@@ -13,7 +13,7 @@ function App() {
     //
 
 
-    <div className='w-10/12 my-10 mx-auto  grid grid-cols-1  shadow-xl rounded-2xl p-2 bg-white'>
+    <div className='w-full md:w-10/12 lg:w-10/12  my-10 mx-auto  grid grid-cols-1  shadow-xl rounded-2xl p-2 bg-white'>
 
 
       <MyForm ></MyForm>

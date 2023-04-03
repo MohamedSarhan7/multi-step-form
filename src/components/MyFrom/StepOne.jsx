@@ -22,7 +22,7 @@ export default function StepOne({ data, next, prev }) {
         phone: Yup.number("not a Number")
             .integer("not a Namber")
             .typeError("not a Number")
-            .notRequired(),
+            .required('phone number is Required'),
 
     });
     return (
@@ -70,7 +70,7 @@ export default function StepOne({ data, next, prev }) {
 
                             <label className='font-medium justify-self-start'>Phone Number</label>
 
-                            <Field name="phone" type="tel" placeholder='0123456789' className={` input  ${touched.email ? (errors['email'] ? "input-error" : "border-green-200") : ""}`} />
+                            <Field name="phone" type="tel" placeholder='0123456789' className={` input  ${touched.phone ? (errors['phone'] ? "input-error" : "border-green-200") : ""}`} />
                             <ErrorMessage name='phone' className="justify-self-start bg-white text-red-700 " component='div' />
                         </div>
                         <div className='col-start-2 justify-self-end px-6 mb-5'>
